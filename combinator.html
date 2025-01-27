@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* child selector
+        div > p {
+            color: red;
+        } */
+        
+
+        /* adjacent sibling selector
+        div + p {
+            color: red;
+        } */
+
+        /* general sibling selector
+        div ~ p {
+            color: red;
+        } */
+
+        div  p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <article>
+            <p>no</p>
+        </article>
+        <p>no</p>
+    </div>
+    <p>yes</p>
+    <p>yes</p>
+</body>
+</html>
