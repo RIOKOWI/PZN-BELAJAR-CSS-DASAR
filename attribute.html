@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[target="_blank"] {
+            color: red;
+        }
+
+        p[title~="belajar"] {
+            color: yellow;
+        }
+
+        p[title|="ayo"] {
+            color: chocolate;
+        }
+
+        p[title^="nigga"] {
+            color: green;
+        
+        }
+
+        p[title$="nigga"] {
+            color:orange;
+        }
+
+        p[title*="ngocok"] {
+            color:red;
+        }
+
+        /*  SEPERTI INI JUGA BOLEH
+        [title*="belajar"]{
+            font-size: 20px;
+        }
+
+        .article[title*="ayo"]{
+            font-family: 'Courier New', Courier, monospace;
+        } */
+
+    </style>
+</head>
+<body>
+    <h1>selector "target"</h1>
+    <a href="" >Contoh 1</a>
+    <a href="" target="_blank">Contoh 2</a>
+    <a href="" >Contoh 3</a>
+    <a href="" target="_self">Contoh 4</a>
+
+    <hr>
+    <h1>selector "~"</h1>
+    <p title="belajar pemrograman">yes</p>
+    <p title="belajarpemrograman">no</p>
+
+    <hr>
+    <h1>selector "|"</h1>
+    <p title="ayo coding">no</p>
+    <p title="ayo">yes</p>
+    <p title="ayo-coding">yes</p>
+
+    <hr>
+    <h1>selector "^"</h1>
+    <p title="nigga hitam">yes</p>
+    <p title="nigga">yes</p>
+    <p title="nigga-putih">yes</p>
+    <p title="orang nigga">no</p>
+
+    <hr>
+    <h1>selector "$"</h1>
+    <p title="nigga hitam">no</p>
+    <p title="nigga">yes</p>
+    <p title="nigga-putih">no</p>
+    <p title="orang nigga">yes</p>
+
+    <hr>
+    <h1>selector "*"</h1>
+    <p title="ngocok feli">yes</p>
+    <p title="ngocok-yok">yes</p>
+    <p title="ngocok">yes</p>
+
+</body>
+</html>

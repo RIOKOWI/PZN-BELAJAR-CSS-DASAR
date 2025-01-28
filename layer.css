@@ -1,0 +1,18 @@
+@layer b, a ;
+
+        h2 {
+            color: yellow;
+        }
+
+
+        @layer a {
+            h1 {
+                color: red;
+            }
+        }
+
+        @layer b {
+            h1 {
+                color: pink;
+            }
+        }

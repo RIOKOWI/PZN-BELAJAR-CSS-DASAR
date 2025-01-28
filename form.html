@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        #username, #pass, #email     {
+            border-style: dashed;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+        }
+        
+        #username:focus, #pass:focus, #email:focus {
+            
+            color: black;
+        }
+
+        
+        label {
+            text-transform: capitalize;
+
+        }
+
+        #login {
+            background-color: blue;
+            padding: 10px;
+            border-radius: 15px;
+            text-transform: capitalize;
+            color: white;
+            border-color: white;
+            
+            
+        }
+
+        #login:hover {
+            background-color: grey;
+            color: black;
+        } 
+
+        #email:invalid {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="username">username :&nbsp;</label>
+        <input type="text" name="username" id="username" required id="username"><br>
+        <label for="pass">password  :&nbsp;</label>
+        <input type="password" name="pass" id="pass" required id="pass"><br>
+        <label for="email">email &nbsp; &nbsp; &nbsp;:   &nbsp;</label>
+        <input type="email" name="email" id="email" required id="email"><br>
+        <button type="submit" id="login">simpan</button>
+    </form>
+</body>
+</html>
